@@ -25,5 +25,20 @@ int main() {
     int linhaV = 5;
     int colunaV = 1;
 
+    // ========== VALIDAÇÃO ==========
+    // verifica se cabe no tabuleiro (horizontal)
+    if (colunaH + 3 <= 10){
+        for (int i = 0; i < 3; i++){
+            tabuleiro[linhaH][colunaH + i] = navio[i];
+        }
+    }
+
+    // verifica se cabe no tabuleiro (vertical)
+    if (linhaV + 3 <= 10){
+        for (int i = 0; i < 3; i++){
+            tabuleiro[linhaV + i][colunaH] = navio[i];
+        }
+    }
+
     return 0;
 }
