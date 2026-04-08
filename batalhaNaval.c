@@ -36,6 +36,17 @@ int main() {
         }
     }
 
+    // ========== NAVIO 3 - DIAGONAL PRINCIPAL ==========
+    int linhaD1 = 0, colunaD1 = 0;
+
+    if(linhaD1 + tamanho <= 10 && colunaD1 + tamanho <= 10){
+        for(int i = 0; i < tamanho; i++){
+            if (tabuleiro[linhaD1 + i][colunaD1 + i] == 0){
+                tabuleiro[linhaD1 + i][colunaD1 + i] = 3;
+            }
+        }
+    }
+
     // ========== POSIÇÃO DOS NAVIOS ==========
     // horizontal
     int linhaH = 2;
