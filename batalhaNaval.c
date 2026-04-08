@@ -102,11 +102,11 @@ int main() {
         }
     }
 
-    // ========== EXIBIÇÃO DO TABULEIRO ==========
-    printf("=== TABULEIRO ===\n\n");
+    // ===== EXIBIR TABULEIRO =====
+    printf("\nTABULEIRO FINAL:\n\n");
 
-    for (int i = 0; i < 10; i++){
-        for (int j = 0; j < 10; j++){
+    for (int i = 0; i < TAM; i++) {
+        for (int j = 0; j < TAM; j++) {
             printf("%d ", tabuleiro[i][j]);
         }
         printf("\n");
