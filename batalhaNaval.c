@@ -56,6 +56,10 @@ int main() {
         }
     }
 
+    // ========== POSIÇÃO DAS HABILIDADES ==========
+    int origemLinha = 5;
+    int origemColuna = 5;
+
     // ========== EXIBIÇÃO DO TABULEIRO ==========
     printf("=== TABULEIRO ===\n\n");
 
