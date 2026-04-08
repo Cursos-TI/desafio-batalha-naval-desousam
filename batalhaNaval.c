@@ -16,7 +16,13 @@ int main() {
     }
 
     // ========== NAVIOS ==========
-    
+    tabuleiro[2][2] = 3;
+    tabuleiro[2][3] = 3;
+    tabuleiro[2][4] = 3;
+
+    tabuleiro[6][6] = 3;
+    tabuleiro[7][6] = 3;
+    tabuleiro[8][6] = 3;
 
     // ========== EXIBIÇÃO DO TABULEIRO ==========
     printf("=== TABULEIRO ===\n\n");
