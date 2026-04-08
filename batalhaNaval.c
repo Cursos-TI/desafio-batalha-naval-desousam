@@ -38,6 +38,15 @@ int main() {
         }
     }
 
+    // ========== CRUZ ==========
+    for(int i = 0; i < HAB; i++){
+        for(int j = 0; j < HAB; j++){
+            if(i == HAB/2 || j == HAB/2){
+                cruz[i][j] = 1;
+            }
+        }
+    }
+
     // ========== EXIBIÇÃO DO TABULEIRO ==========
     printf("=== TABULEIRO ===\n\n");
 
