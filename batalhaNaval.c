@@ -74,7 +74,19 @@ int main() {
         }
     }
 
-    
+    // ===== APLICAR CRUZ =====
+    for (int i = 0; i < HAB; i++) {
+        for (int j = 0; j < HAB; j++) {
+            int lin = origemLinha + i - HAB/2;
+            int col = origemColuna + j - HAB/2;
+
+            if (lin >= 0 && lin < TAM && col >= 0 && col < TAM) {
+                if (cruz[i][j] == 1 && tabuleiro[lin][col] == 0) {
+                    tabuleiro[lin][col] = 5;
+                }
+            }
+        }
+    }
 
     // ========== EXIBIÇÃO DO TABULEIRO ==========
     printf("=== TABULEIRO ===\n\n");
