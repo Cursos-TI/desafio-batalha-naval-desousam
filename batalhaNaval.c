@@ -16,7 +16,14 @@ int main() {
     // cada navio tem tamanho 3
     int navio [3] = {3, 3, 3};
 
-    
+    // ========== POSIÇÃO DOS NAVIOS ==========
+    // horizontal
+    int linhaH = 2;
+    int colunaH = 4;
+
+    //vertical
+    int linhaV = 5;
+    int colunaV = 1;
 
     return 0;
 }
