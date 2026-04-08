@@ -12,9 +12,18 @@ int main() {
         }
     }
 
-    // ========== NAVIOS ==========
-    // cada navio tem tamanho 3
-    int navio [3] = {3, 3, 3};
+    int tamanho = 3;
+
+    // ========== NAVIO 1 - HORIZONTAL ==========
+    int linhaH = 1, colunaH = 2;
+
+    if (colunaH + tamanho <= 10){
+        for(int i = 0; i < tamanho; i++){
+            if(tabuleiro[linhaH][colunaH + i] == 0){
+                tabuleiro[linhaH][colunaH + i] = 3;
+            }
+        }
+    }
 
     // ========== POSIÇÃO DOS NAVIOS ==========
     // horizontal
