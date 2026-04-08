@@ -24,6 +24,11 @@ int main() {
     tabuleiro[7][6] = 3;
     tabuleiro[8][6] = 3;
 
+    // ========== MATRIZES DE HABILIDADE ==========
+    int cone[HAB][HAB] = {0};
+    int cruz[HAB][HAB] = {0};
+    int octaedro[HAB][HAB] = {0};
+
     // ========== EXIBIÇÃO DO TABULEIRO ==========
     printf("=== TABULEIRO ===\n\n");
 
