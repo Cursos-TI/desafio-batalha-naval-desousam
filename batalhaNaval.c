@@ -47,6 +47,17 @@ int main() {
         }
     }
 
+    // ========== NAVIO 4 - DIAGONAL SECUNDARIA ==========
+    int linhaD2 = 2, colunaD2 = 9;
+
+    if(linhaD2 + tamanho <= 10 && colunaD2 - (tamanho - 1) >= 0){
+        for(int i = 0; i < tamanho; i++){
+            if (tabuleiro[linhaD2 + i][colunaD2 - i] == 0){
+                tabuleiro[linhaD2 + i][colunaD2 - i] = 3;
+            }
+        }
+    }
+
     // ========== POSIÇÃO DOS NAVIOS ==========
     // horizontal
     int linhaH = 2;
