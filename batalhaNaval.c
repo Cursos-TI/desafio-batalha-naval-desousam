@@ -12,6 +12,10 @@ int main() {
         }
     }
 
+    // ========== NAVIOS ==========
+    // cada navio tem tamanho 3
+    int navio [3] = {3, 3, 3};
+
     
 
     return 0;
