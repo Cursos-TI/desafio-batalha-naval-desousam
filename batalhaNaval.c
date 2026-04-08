@@ -47,6 +47,15 @@ int main() {
         }
     }
 
+    // ========== OCTAEDRO ==========
+    for(int i = 0; i < HAB; i++){
+        for(int j = 0; j < HAB; j++){
+            if(abs(i - HAB/2) + abs(j - HAB/2) <= HAB/2){
+                octaedro[i][j] = 1;
+            }
+        }
+    }
+
     // ========== EXIBIÇÃO DO TABULEIRO ==========
     printf("=== TABULEIRO ===\n\n");
 
