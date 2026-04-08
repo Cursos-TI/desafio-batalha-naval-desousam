@@ -25,6 +25,17 @@ int main() {
         }
     }
 
+    // ========== NAVIO 2 - VERTICAL ==========
+    int linhaV = 5, colunaV = 0;
+
+    if (linhaV + tamanho <= 10){
+        for(int i = 0; i < tamanho; i++){
+            if(tabuleiro[linhaV + i][colunaV] == 0){
+                tabuleiro[linhaV + i][colunaV] = 3;
+            }
+        }
+    }
+
     // ========== POSIÇÃO DOS NAVIOS ==========
     // horizontal
     int linhaH = 2;
