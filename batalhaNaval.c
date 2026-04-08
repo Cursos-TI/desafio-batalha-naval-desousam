@@ -29,6 +29,15 @@ int main() {
     int cruz[HAB][HAB] = {0};
     int octaedro[HAB][HAB] = {0};
 
+    // ========== CONE ==========
+    for(int i = 0; i < HAB; i++){
+        for(int j = 0; j < HAB; j++){
+            if(j >= (HAB/2 - i) && j <= (HAB/2 + i)){
+                cone[i][j] = 1;
+            }
+        }
+    }
+
     // ========== EXIBIÇÃO DO TABULEIRO ==========
     printf("=== TABULEIRO ===\n\n");
 
